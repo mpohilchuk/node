@@ -30,7 +30,7 @@ const PORT = process.env.PORT || 3000
 
 async function start(){
     try{
-        const url = 'mongodb://uovjs8v8yrud6ebwkkjh:NgwqalhD1bxUKABQO11i@bm4e67ynmjaqi7d-mongodb.services.clever-cloud.com:27017/bm4e67ynmjaqi7d'
+        const url = 'mongodb:/'
         await mongoose.connect(url, {useNewUrlParser: true})
         app.listen(PORT, () => {
             console.log(`server is runnin on port: ${PORT}`)
