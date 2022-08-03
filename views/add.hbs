@@ -1,0 +1,22 @@
+<h1>Добавить новую кошку</h1>
+
+<form action="/add" method="post">
+    <div class="input-field">
+        <input id="title" type="text" class="validate" name="title" required>
+        <label for="title">Название кошки</label>
+        <span class="helper-text" data-error="Введите название"></span>
+    </div>
+
+    <div class="input-field">
+        <input id="price" type="number" class="validate" required min=1 name="price">
+        <label for="price">Цена</label>
+        <span class="helper-text" data-error="Введите цену"></span>
+    </div>
+
+    <div class="input-field">
+        <input id="img" type="text" class="validate" required name="img">
+        <label for="img">URL Картинки</label>
+        <span class="helper-text" data-error="Введите url картинки"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Добавить кошку</button>
+</form>

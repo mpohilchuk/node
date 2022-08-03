@@ -1,0 +1,46 @@
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Приложение кошек</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+            <li class="active">
+                <a href="/">Главная страница</a>
+            </li>
+        {{else}}
+            <li>
+                <a href="/">Главная страница</a>
+            </li>
+        {{/if}}
+
+        {{#if isCats}}
+            <li class="active">
+                <a href="/cats">Кошки</a>
+            </li>
+        {{else}}
+            <li>
+                <a href="/cats">Кошки</a>
+            </li>
+        {{/if}}
+
+        {{#if isAdd}}
+            <li class="active">
+                <a href="/add">Добавить кошку</a>
+            </li>
+        {{else}}
+            <li>
+                <a href="/add">Добавить кошку</a>
+            </li>
+        {{/if}}
+
+        {{#if isCard}}
+            <li class="active">
+                <a href="/card">Корзина</a>
+            </li>
+        {{else}}
+            <li>
+                <a href="/card">Корзина</a>
+            </li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
